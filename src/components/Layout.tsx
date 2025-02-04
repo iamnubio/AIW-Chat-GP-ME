@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { Bot, Menu, X, ChevronRight, MessageSquare, Settings as SettingsIcon, HelpCircle, Home, Layers, Wrench, MessageCircle } from 'lucide-react';
+import { Bot, Menu, X, ChevronRight, MessageSquare, Settings as SettingsIcon, HelpCircle, Home, Layers, Wrench, MessageCircle, UserSquare2 } from 'lucide-react';
 import MouseGlow from './effects/MouseGlow';
 
 interface LayoutProps {
@@ -43,6 +43,12 @@ export default function Layout({ children }: LayoutProps) {
           label: 'Threads',
           path: '/threads',
           isActive: location.pathname === '/threads'
+        },
+        {
+          icon: UserSquare2,
+          label: 'Character Creator',
+          path: '/character-creator',
+          isActive: location.pathname === '/character-creator'
         },
         {
           icon: Wrench,

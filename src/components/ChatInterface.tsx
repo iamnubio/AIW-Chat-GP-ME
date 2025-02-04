@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { Send, Bot, Menu, X, ChevronRight, MessageSquare, Settings as SettingsIcon, HelpCircle, Home, Layers, Wrench, MessageCircle } from 'lucide-react';
+import { Send, Bot, Menu, X, ChevronRight, MessageSquare, Settings as SettingsIcon, HelpCircle, Home, Layers, Wrench, MessageCircle, UserSquare2 } from 'lucide-react';
 import { useOpenAI } from '../context/OpenAIContext';
 import MouseGlow from './effects/MouseGlow';
 
@@ -73,6 +73,12 @@ export default function ChatInterface() {
           label: 'Threads',
           path: '/threads',
           isActive: location.pathname === '/threads'
+        },
+        {
+          icon: UserSquare2,
+          label: 'Character Creator',
+          path: '/character-creator',
+          isActive: location.pathname === '/character-creator'
         },
         {
           icon: Wrench,
