@@ -65,23 +65,26 @@ export default function ChatInterface() {
         {
           icon: Home,
           label: 'Dashboard',
-          href: 'https://platform.openai.com/assistants',
-          external: true
+          path: '/dashboard',
+          isActive: location.pathname === '/dashboard'
         },
         {
           icon: Layers,
           label: 'Threads',
-          path: '/threads'
+          path: '/threads',
+          isActive: location.pathname === '/threads'
         },
         {
           icon: Wrench,
           label: 'Tools',
-          path: '/tools'
+          path: '/tools',
+          isActive: location.pathname === '/tools'
         },
         {
           icon: SettingsIcon,
           label: 'Settings',
-          path: '/settings'
+          path: '/settings',
+          isActive: location.pathname === '/settings'
         }
       ]
     },

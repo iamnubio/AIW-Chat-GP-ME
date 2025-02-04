@@ -1,5 +1,5 @@
 # Project Structure 
-Last updated: 2025-02-04  1:05:53.38 
+Last updated: 2025-02-04  1:19:03.16 
  
 ## Directory Structure 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.bolt 
@@ -71,6 +71,8 @@ F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\14
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\1a 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\1c 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\1f 
+F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\22 
+F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\23 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\2a 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\2d 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\35 
@@ -83,15 +85,18 @@ F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\5b
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\5c 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\5f 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\61 
+F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\65 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\6b 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\6c 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\79 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\82 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\90 
+F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\95 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\98 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\a8 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\ab 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\ad 
+F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\ae 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\b5 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\ba 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\bf 
@@ -99,15 +104,18 @@ F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\c7
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\d0 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\d2 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\d3 
+F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\dd 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\de 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\e1 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\e4 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\e6 
+F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\e7 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\ea 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\ef 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\f0 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\f7 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\f8 
+F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\fb 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\info 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\pack 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\00\0a545f940bb4a112e4099589bd7cbefac0e9e6 
@@ -120,6 +128,8 @@ F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\14\7380affffa48cce8a70ee05270
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\1a\c45fde78cf79d99c1a68c15d11c16ae947c501 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\1c\5669b7c2d287a26936257f3e3861b599c812af 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\1f\fef600d959ec9e396d5a260bd3f5b927b2cef8 
+F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\22\39f9178446d143f94c1ddb1c5e5dc2dfc32bfd 
+F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\23\26998e096eeafd29cd00557639d8bc57a0cc8b 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\2a\a7205d4b402a1bdfbe07110c61df920b370066 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\2d\7f58957712587b19dc33a825f3da547ed6f9e1 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\35\2266560fd3f1326c7011767965b6c14a02d08a 
@@ -133,15 +143,18 @@ F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\5b\a4290e369c0636be223188b9d4
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\5c\344894cda4047c452fa01795bbdd94c9391d40 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\5f\b0b6349c6f6f865d5e468f1ec0e32f06981e3e 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\61\8f04005aee6a0d3e2b8772a1e12c541ce37477 
+F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\65\4f4df9d876cfeeda9c6bbdedd092b2841ee284 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\6b\6787dcd124b08cbe754dca375d4780fe93829d 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\6c\15345387231bfef9d4fa75239ef051da3bc16c 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\79\d85148d473bc5f208af05255c4edde40ab9d2c 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\82\c2e20ccc2bae01b6589f5f391cb20f34db41fd 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\90\0af44d99b63b1df7f4a60f8c78081637c1d5d8 
+F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\95\317594032b04bb247539bbe84b4b4ffee35203 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\98\27bdfc0f60b9e02123a78a511803abbb86bc9d 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\a8\5da5346154b6e161dfa155fd61ee9d739279af 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\ab\1fdcabcf7e768a1ba730cdb32e19c9602c512b 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\ad\2116da208627bab1cd74280a107ccb300830f7 
+F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\ae\86cad4424e95f8fa10d5d4dc8d72bb2a29055f 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\b5\c61c956711f981a41e95f7fcf0038436cfbb22 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\ba\d2abbaed5281318610525c5853d5582e1f287a 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\bf\94bdf1e7956e4bfca58e2371be28a4bf7d22e5 
@@ -149,15 +162,18 @@ F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\c7\38282943f83cfb39ca4454cf74
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\d0\c0a8ff5c5a4b33197a6470eab7d3411c179c61 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\d2\1f1cdae70ca548855964467cc032c21ce5c1bb 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\d3\23bf52e64ec89df2cbf4a6103921f7af1b4045 
+F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\dd\953ef2b265bd91ed417f12d36d5eed3e6c0c9c 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\de\baaee402e3836b3eec8491e65d037f54a9fd56 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\e1\619f35ea62a03c5ba4f2b799beb469c8929d3b 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\e4\b78eae12304a075fa19675c4047061d6ab920d 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\e6\4ffc5e44cb97e02b52182b17c6877a0a1408b6 
+F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\e7\cab6dca192d401ee589cdd8acd8ba0239c44b9 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\ea\9e3630a4f82a3cc92500297b28fa6f1ff72a75 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\ef\7abd4c914a8b82dac03dc4ee681643adb07be9 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\f0\a235055d24607ba5e0bedc494ffc35b5956fbb 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\f7\bd0d2b063790f2e4adbcd24cef6cb469fe7727 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\f8\3b17856fccbc3d711fb51b3661b1d5bd2d3e46 
+F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\objects\fb\28939fbb9d798946879b2e243aa25f1aac3a01 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\refs\heads 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\refs\remotes 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\.git\refs\tags 
