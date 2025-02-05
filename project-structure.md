@@ -186,4 +186,4 @@ F:\AI WORKSHOP\Chat-GP-ME-APP\project\src\context\OpenAIContext.tsx
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\src\pages\Dashboard.tsx 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\src\pages\Settings.tsx 
 F:\AI WORKSHOP\Chat-GP-ME-APP\project\src\pages\Threads.tsx 
-F:\AI WORKSHOP\Chat-GP-ME-APP\project\src\pages\Tools.tsx 
+F:\AI WORKSHOP\Chat-GP-ME-APP\project\src\pages\Tools.tsx

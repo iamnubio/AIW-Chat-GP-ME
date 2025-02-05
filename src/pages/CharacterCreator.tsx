@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Bot, Send, Plus, X, ChevronDown } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Bot, Send, Plus, X, ChevronDown, Loader2 } from 'lucide-react';
 import Layout from '../components/Layout';
 import { useOpenAI } from '../context/OpenAIContext';
 import { useNavigate } from 'react-router-dom';
@@ -70,10 +70,16 @@ export default function CharacterCreator() {
       // Create a thread if none exists
       const thread = await state.client.beta.threads.create();
 
-      // Add the message to the thread
+      // Add the user's message to the thread
       await state.client.beta.threads.messages.create(thread.id, {
         role: 'user',
         content: userMessage,
+      });
+
+      // Add a follow-up message requesting specific field information
+      await state.client.beta.threads.messages.create(thread.id, {
+        role: 'user',
+        content: "Based on the character description I provided, please fill out the following fields: Name, Bio, Lore, Topics of Expertise, General Style, Chat Style. Provide the information in a structured format with clear labels for each field.",
       });
 
       // Run the assistant
@@ -97,15 +103,12 @@ export default function CharacterCreator() {
 
             setMessages(prev => [...prev, { role: 'assistant', content }]);
 
-            // Update form data based on the message content
-            // This is a simple example - you would want to implement more sophisticated parsing
-            if (userMessage.toLowerCase().includes('name')) {
-              const potentialName = userMessage.split('name')[1].trim();
-              setFormData(prev => ({
-                ...prev,
-                name: potentialName
-              }));
-            }
+            // Parse the AI response and update form data
+            const parsedResponse = parseAIResponse(content);
+            setFormData(prev => ({
+              ...prev,
+              ...parsedResponse
+            }));
           }
           setIsLoading(false);
         } else if (runStatus.status === 'failed') {
@@ -127,6 +130,41 @@ export default function CharacterCreator() {
       ]);
       setIsLoading(false);
     }
+  };
+
+  const parseAIResponse = (content: string): Partial<FormData> => {
+    const parsedData: Partial<FormData> = {};
+    const fields = ['Name', 'Bio', 'Lore', 'Topics of Expertise', 'General Style', 'Chat Style'];
+    
+    fields.forEach(field => {
+      const regex = new RegExp(`${field}:\\s*(.+?)(?=\\n\\n|$)`, 's');
+      const match = content.match(regex);
+      if (match) {
+        const value = match[1].trim();
+        switch (field) {
+          case 'Name':
+            parsedData.name = value;
+            break;
+          case 'Bio':
+            parsedData.bio = value;
+            break;
+          case 'Lore':
+            parsedData.lore = value;
+            break;
+          case 'Topics of Expertise':
+            parsedData.topics = value;
+            break;
+          case 'General Style':
+            parsedData.styleAll = value;
+            break;
+          case 'Chat Style':
+            parsedData.styleChat = value;
+            break;
+        }
+      }
+    });
+    
+    return parsedData;
   };
 
   const tabs = [
