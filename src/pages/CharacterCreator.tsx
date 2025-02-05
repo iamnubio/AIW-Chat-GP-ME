@@ -139,7 +139,7 @@ export default function CharacterCreator() {
         const value = match[1].trim();
         switch (field) {
           case 'Name':
-            parsedData.name = value;
+            parsedData.name = value.replace(/\*\*/g, '').trim();
             break;
           case 'Bio':
             parsedData.bio = value;
@@ -166,10 +166,32 @@ export default function CharacterCreator() {
   const generateCharacterFile = () => {
     const formData = formDataRef.current;
     return JSON.stringify({
-      ...formData,
+      name: formData.name.replace(/\*\*/g, '').trim(),
+      modelProvider: '',
+      plugins: [],
+      bio: formData.bio.split('\n').filter(line => line.trim()).map(line => 
+        line.replace(/\*\*/g, '').trim()
+      ),
+      lore: formData.lore.split('\n').filter(line => line.trim()).map(line => 
+        line.replace(/\*\*/g, '').trim()
+      ),
+      topics: formData.topics.split('\n')
+        .filter(line => line.trim())
+        .map(line => line.replace(/^[-•]\s*/, '').trim()),
+      style: {
+        all: formData.styleAll.split('\n')
+          .filter(line => line.trim())
+          .map(line => line.replace(/\*\*/g, '').trim()),
+        chat: formData.styleChat.split('\n')
+          .filter(line => line.trim())
+          .map(line => line.replace(/\*\*/g, '').trim()),
+        post: []
+      },
+      messageExamples: messageExamples,
+      postExamples: [],
       adjectives: adjectives.filter(adj => adj.trim() !== ''),
-      knowledgeEntries: knowledgeEntries.filter(entry => entry.trim() !== ''),
-      messageExamples
+      people: [],
+      knowledge: knowledgeEntries.filter(entry => entry.trim() !== ''),
     }, null, 2);
   };
 
