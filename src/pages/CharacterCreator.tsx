@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Bot, Send, Plus, X, ChevronDown, Loader2, Download } from 'lucide-react';
+import { Bot, Send, Plus, X, ChevronDown, Loader2, Download, UserPlus } from 'lucide-react';
 import Layout from '../components/Layout';
 import { useOpenAI } from '../context/OpenAIContext';
 import { useNavigate } from 'react-router-dom';
@@ -163,6 +163,19 @@ export default function CharacterCreator() {
     return parsedData;
   };
 
+  const isCharacterFileValid = () => {
+    const formData = formDataRef.current;
+    return formData.name.trim() !== '' && 
+           (formData.bio.trim() !== '' || 
+            formData.lore.trim() !== '' || 
+            formData.topics.trim() !== '' || 
+            formData.styleAll.trim() !== '' || 
+            formData.styleChat.trim() !== '' ||
+            adjectives.some(adj => adj.trim() !== '') ||
+            knowledgeEntries.some(entry => entry.trim() !== '') ||
+            messageExamples.some(ex => ex.user.trim() !== '' || ex.character.trim() !== ''));
+  };
+
   const generateCharacterFile = () => {
     const formData = formDataRef.current;
     return JSON.stringify({
@@ -208,6 +221,16 @@ export default function CharacterCreator() {
     URL.revokeObjectURL(url);
   };
 
+  const handleCreateAssistant = () => {
+    if (!isCharacterFileValid()) {
+      toast.error('Please add some information to the character file before creating an assistant.');
+      return;
+    }
+
+    const characterData = JSON.parse(generateCharacterFile());
+    navigate('/create-assistant', { state: { characterData } });
+  };
+
   const tabs = [
     { id: 'basic', label: 'Basic Info' },
     { id: 'personality', label: 'Personality' },
@@ -224,13 +247,23 @@ export default function CharacterCreator() {
               <Bot className="w-8 h-8 text-blue-400" />
               <h1 className="text-2xl font-bold text-white">Character Creator</h1>
             </div>
-            <button
-              onClick={downloadCharacterFile}
-              className="px-4 py-2 bg-blue-900/20 hover:bg-blue-900/30 text-white rounded-lg transition-colors border border-blue-900/50 flex items-center gap-2"
-            >
-              <Download className="w-4 h-4" />
-              Download Character File
-            </button>
+            <div className="flex gap-2">
+              <button
+                onClick={downloadCharacterFile}
+                className="px-4 py-2 bg-blue-900/20 hover:bg-blue-900/30 text-white rounded-lg transition-colors border border-blue-900/50 flex items-center gap-2"
+              >
+                <Download className="w-4 h-4" />
+                Download Character File
+              </button>
+              <button
+                onClick={handleCreateAssistant}
+                disabled={!isCharacterFileValid()}
+                className="px-4 py-2 bg-green-900/20 hover:bg-green-900/30 text-white rounded-lg transition-colors border border-green-900/50 flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                <UserPlus className="w-4 h-4" />
+                Create OpenAI Assistant
+              </button>
+            </div>
           </div>
         </div>
 
@@ -238,6 +271,14 @@ export default function CharacterCreator() {
           {/* Chat Interface */}
           <div className="bg-gray-900/40 rounded-lg p-6 border border-blue-900/30">
             <h2 className="text-xl font-semibold text-white mb-4">Character Creation Chat</h2>
+            {messages.length === 0 && (
+              <div className="mb-6 p-4 bg-blue-900/20 rounded-lg border border-blue-900/30">
+                <h3 className="font-semibold text-white mb-2">Let's create your AI character!</h3>
+                <p className="text-gray-400">
+                  Tell me about the character you want to create. As we talk, I'll fill in their details in the form.
+                </p>
+              </div>
+            )}
             <div className="h-[400px] overflow-y-auto mb-4 space-y-4 pr-4">
               {messages.map((message, index) => (
                 <div

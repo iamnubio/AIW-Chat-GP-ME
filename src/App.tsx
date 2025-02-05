@@ -8,6 +8,7 @@ import Threads from './pages/Threads';
 import Tools from './pages/Tools';
 import Settings from './pages/Settings';
 import CharacterCreator from './pages/CharacterCreator';
+import CreateAssistant from './pages/CreateAssistant';
 import { Toaster } from 'sonner';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/threads" element={<Threads />} />
           <Route path="/character-creator" element={<CharacterCreator />} />
+          <Route path="/create-assistant" element={<CreateAssistant />} />
           <Route path="/tools" element={<Tools />} />
           <Route path="/settings" element={<Settings />} />
           <Route path="*" element={<Navigate to="/" replace />} />
