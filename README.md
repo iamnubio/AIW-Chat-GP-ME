@@ -1,5 +1,5 @@
 # Chat GP-ME Documentation
-
+    
 ## Overview
 Chat GP-ME is a professional React-based web application that provides a seamless interface for interacting with OpenAI's Assistants API. The application offers a modern, responsive UI with features like real-time chat, thread management, and assistant configuration.
 
