@@ -295,7 +295,7 @@ export default function CharacterCreator() {
                     {message.role === 'assistant' && (
                       <div className="flex items-center gap-2 mb-1">
                         <Bot className="w-4 h-4 text-blue-400" />
-                        <span className="text-sm font-medium text-blue-400">AI Assistant</span>
+                        <span className="text-sm font-medium text-blue-400">Boogie-Ai</span>
                       </div>
                     )}
                     <p className="text-white whitespace-pre-line">{message.content}</p>
@@ -307,7 +307,7 @@ export default function CharacterCreator() {
                   <div className="max-w-[80%] rounded-2xl px-4 py-2 bg-gray-900/80 rounded-tl-sm">
                     <div className="flex items-center gap-2 mb-1">
                       <Bot className="w-4 h-4 text-blue-400" />
-                      <span className="text-sm font-medium text-blue-400">AI Assistant</span>
+                      <span className="text-sm font-medium text-blue-400">BOOGIE-Ai</span>
                     </div>
                     <div className="flex items-center gap-2 text-gray-400">
                       <span>Thinking</span>
