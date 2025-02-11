@@ -15,7 +15,7 @@ function ThinkingIndicator() {
       <div className="max-w-[80%] rounded-2xl px-4 py-2 bg-zinc-800/80 rounded-tl-sm">
         <div className="flex items-center gap-2 mb-1">
           <Bot className="w-4 h-4 text-blue-400" />
-          <span className="text-sm font-medium text-blue-400">AI Assistant</span>
+          <span className="text-sm font-medium text-blue-400">BOOGIE-Ai</span>
         </div>
         <div className="flex items-center gap-2 text-zinc-400">
           <span>Thinking</span>
@@ -269,7 +269,7 @@ export default function ChatInterface() {
             <div className="flex items-center gap-3">
               <Bot className="w-6 h-6 text-blue-400" />
               <h1 className="text-lg font-semibold text-white">
-                Chat GP-ME
+                BOOGIE-Ai
               </h1>
             </div>
             <button
@@ -377,7 +377,7 @@ export default function ChatInterface() {
                     {message.role === 'assistant' && (
                       <div className="flex items-center gap-2 mb-1">
                         <Bot className="w-4 h-4 text-blue-400" />
-                        <span className="text-sm font-medium text-blue-400">AI Assistant</span>
+                        <span className="text-sm font-medium text-blue-400">BOOGIE-Ai</span>
                       </div>
                     )}
                     <p className="text-white whitespace-pre-line">{message.content}</p>

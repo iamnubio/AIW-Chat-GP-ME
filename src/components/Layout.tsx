@@ -94,9 +94,7 @@ export default function Layout({ children }: LayoutProps) {
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-3">
               <Bot className="w-6 h-6 text-blue-400" />
-              <h1 className="text-lg font-semibold text-white">
-                Chat GP-ME
-              </h1>
+              <h1 className="text-lg font-semibold text-white">BOOGIE-Ai</h1>
             </div>
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
